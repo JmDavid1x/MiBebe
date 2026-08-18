@@ -211,9 +211,10 @@
     ctx.clearRect(0, 0, W, H);
 
     const base = Math.min(W, H);
-    const escala = clamp(base / 640, 0.45, 1.05);
+    // en ventanas bajitas la flor se achica y sube, para no tapar el texto
+    const escala = clamp(Math.min(W, H * 0.85) / 640, 0.45, 1.05);
     const cx = W / 2;
-    const cy = H * 0.28;
+    const cy = H * 0.26;
     const largoTallo = H * 0.32;
 
     const avance = clamp(t / DURACION, 0, 1);
