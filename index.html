@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Cachetes ❤</title>
+<meta name="description" content="Una rosa que no se marchita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌹</text></svg>">
+</head>
+<body>
+
+<!-- Lluvia de pétalos (fondo, toda la página) -->
+<canvas id="petalos" aria-hidden="true"></canvas>
+
+<!-- ══════════ 1. INICIO ══════════ -->
+<section id="inicio" class="seccion hero">
+  <div class="vineta"></div>
+  <canvas id="rosa" aria-label="Una rosa roja que florece"></canvas>
+  <div class="hero-texto">
+    <p class="saludo" data-rev>Para ti,</p>
+    <h1 class="titulo-hero" data-rev>Cachetes</h1>
+    <p class="subtitulo" data-rev></p>
+  </div>
+  <div class="scroll-hint" data-rev>
+    <span></span>
+    <div class="linea"></div>
+  </div>
+</section>
+
+<!-- ══════════ 2. LA CARTA ══════════ -->
+<section id="carta" class="seccion carta">
+  <div class="contenedor">
+    <h2 class="titulo-seccion" data-rev></h2>
+    <blockquote class="frase" data-rev>
+      <span class="comilla">“</span>
+      <p id="frase-texto"></p>
+    </blockquote>
+    <div class="parrafos" id="carta-parrafos"></div>
+    <p class="firma" data-rev></p>
+  </div>
+</section>
+
+<!-- ══════════ 3. RAZONES ══════════ -->
+<section id="razones" class="seccion razones">
+  <div class="contenedor">
+    <h2 class="titulo-seccion" data-rev></h2>
+    <p class="pista" data-rev></p>
+    <div class="tarjetas" id="tarjetas"></div>
+  </div>
+</section>
+
+<!-- ══════════ 4. JARDÍN INTERACTIVO ══════════ -->
+<section id="jardin" class="seccion jardin">
+  <div class="contenedor">
+    <h2 class="titulo-seccion" data-rev></h2>
+    <p class="pista" data-rev></p>
+  </div>
+  <canvas id="jardin-canvas"></canvas>
+  <button id="limpiar-jardin" class="btn-fantasma" type="button">volver a empezar</button>
+</section>
+
+<!-- ══════════ 5. FINAL ══════════ -->
+<section id="final" class="seccion final">
+  <div class="contenedor">
+    <div class="corazon" id="corazon" aria-hidden="true"></div>
+    <h2 class="titulo-final" data-rev></h2>
+    <p class="texto-final" data-rev></p>
+    <button id="btn-final" class="btn" type="button"></button>
+    <p class="firma-final" data-rev></p>
+  </div>
+</section>
+
+<script src="contenido.js"></script>
+<script src="rosa.js"></script>
+<script src="petalos.js"></script>
+<script src="jardin.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
