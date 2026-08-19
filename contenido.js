@@ -32,13 +32,13 @@ const CONTENIDO = {
 
   /* --- Cuenta regresiva --- */
   cumpleanos: {
-    etiqueta: "falta poco",
+    etiqueta: "faltan exactamente",
     titulo: "Su Día",
     mes: 8,
     dia: 31,
-    mensaje: "El 31 de agosto el mundo celebra que llegaste a él. Yo lo celebro más que nadie.",
+    mensaje: "En esta fecha nació la mujer más linda del planeta, con la que quiero pasar el resto de mi vida.",
     mensajeCumple: "Feliz cumpleaños, Cachetes",
-    textoCumple: "Hoy el universo hizo bien las cosas al traerte al mundo. Gracias por existir, gracias por quedarte, gracias por ser exactamente como eres."
+    textoCumple: "Hoy nació la mujer más linda del planeta. Y yo tengo la suerte de que quiera pasar el resto de su vida conmigo."
   },
 
   /* --- Nuestra canción --- */
