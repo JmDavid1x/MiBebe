@@ -30,6 +30,14 @@ const CONTENIDO = {
     ]
   },
 
+  /* --- Nuestra canción --- */
+  cancion: {
+    titulo: "Nuestra Canción",
+    descripcion: "Esta canción es la que nos identifica.",
+    artista: "El Vega",
+    track: "Te Encontré"
+  },
+
   /* --- Tarjetas que se voltean (haz clic para descubrirlas) --- */
   razones: {
     titulo: "Razones",

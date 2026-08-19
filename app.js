@@ -33,6 +33,13 @@
       $('#carta .firma').textContent = C.firma || '';
     }
 
+    if (C.cancion) {
+      $('#cancion .titulo-seccion').textContent = C.cancion.titulo;
+      $('#cancion .cancion-descripcion').textContent = C.cancion.descripcion;
+      $('#cancion .cancion-artista').textContent = C.cancion.artista;
+      $('#cancion .cancion-titulo-track').textContent = C.cancion.track;
+    }
+
     if (C.razones) {
       $('#razones .titulo-seccion').textContent = C.razones.titulo;
       $('#razones .pista').textContent = C.razones.subtitulo;

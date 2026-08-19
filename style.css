@@ -273,7 +273,68 @@ body::before {
   transition-delay: .3s;
 }
 
-/* ══════════ 3. TARJETAS ══════════ */
+/* ══════════ 3. NUESTRA CANCIÓN ══════════ */
+.cancion { background: linear-gradient(180deg, transparent, rgba(107,2,16,.07) 50%, transparent); }
+
+.cancion-descripcion {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2.8vw, 1.45rem);
+  color: var(--rosa-palido);
+  margin: 2rem auto 3rem;
+  max-width: 32rem;
+  line-height: 1.7;
+  transition-delay: .1s;
+}
+
+.cancion-player {
+  max-width: 600px;
+  margin: 0 auto;
+  transition-delay: .2s;
+}
+
+.cancion-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
+  margin-bottom: 1.6rem;
+}
+
+.cancion-artista {
+  font-family: var(--sans);
+  font-size: .62rem;
+  letter-spacing: .36em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.cancion-titulo-track {
+  font-family: var(--script);
+  font-size: clamp(2rem, 6vw, 2.8rem);
+  color: var(--crema);
+  text-shadow: 0 0 30px rgba(255,45,77,.35);
+}
+
+.cancion-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  border: 1px solid rgba(255,45,77,.22);
+  box-shadow: 0 0 60px rgba(107,2,16,.45), 0 0 120px rgba(208,2,27,.12);
+}
+
+.cancion-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ══════════ 4. TARJETAS ══════════ */
 .tarjetas {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -338,7 +399,7 @@ body::before {
   border-color: rgba(255,45,77,.4);
 }
 
-/* ══════════ 4. JARDÍN ══════════ */
+/* ══════════ 5. JARDÍN ══════════ */
 .jardin { padding-bottom: 3rem; }
 #jardin-canvas {
   width: 100%;
@@ -372,7 +433,7 @@ body::before {
 }
 .btn-fantasma:hover { color: var(--crema); border-color: var(--rojo-vivo); }
 
-/* ══════════ 5. FINAL ══════════ */
+/* ══════════ 6. FINAL ══════════ */
 .final { text-align: center; }
 
 .corazon {
