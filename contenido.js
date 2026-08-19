@@ -30,6 +30,17 @@ const CONTENIDO = {
     ]
   },
 
+  /* --- Cuenta regresiva --- */
+  cumpleanos: {
+    etiqueta: "falta poco",
+    titulo: "Su Día",
+    mes: 8,
+    dia: 31,
+    mensaje: "El 31 de agosto el mundo celebra que llegaste a él. Yo lo celebro más que nadie.",
+    mensajeCumple: "Feliz cumpleaños, Cachetes",
+    textoCumple: "Hoy el universo hizo bien las cosas al traerte al mundo. Gracias por existir, gracias por quedarte, gracias por ser exactamente como eres."
+  },
+
   /* --- Nuestra canción --- */
   cancion: {
     titulo: "Nuestra Canción",

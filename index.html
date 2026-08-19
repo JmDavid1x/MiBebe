@@ -67,7 +67,46 @@
   </div>
 </section>
 
-<!-- ══════════ 4. RAZONES ══════════ -->
+<!-- ══════════ 4. SU DÍA — CUENTA REGRESIVA ══════════ -->
+<section id="cumpleanos" class="seccion cumpleanos">
+  <div class="contenedor">
+    <p class="cd-etiqueta" data-rev></p>
+    <h2 class="titulo-seccion" data-rev></h2>
+    <p class="cd-mensaje" data-rev></p>
+
+    <div class="cd-wrap" data-rev>
+      <div class="cd-unidades">
+        <div class="cd-unidad">
+          <span class="cd-numero" id="cd-dias">00</span>
+          <span class="cd-label">días</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unidad">
+          <span class="cd-numero" id="cd-horas">00</span>
+          <span class="cd-label">horas</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unidad">
+          <span class="cd-numero" id="cd-minutos">00</span>
+          <span class="cd-label">minutos</span>
+        </div>
+        <span class="cd-sep">:</span>
+        <div class="cd-unidad">
+          <span class="cd-numero" id="cd-segs">00</span>
+          <span class="cd-label">segundos</span>
+        </div>
+      </div>
+      <p class="cd-fecha" data-rev>31 de agosto</p>
+    </div>
+
+    <div class="cumple-activo" id="cumple-activo" style="display:none">
+      <p class="cumple-titulo" id="cumple-titulo"></p>
+      <p class="cumple-texto" id="cumple-texto"></p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 5. RAZONES ══════════ -->
 <section id="razones" class="seccion razones">
   <div class="contenedor">
     <h2 class="titulo-seccion" data-rev></h2>
@@ -76,7 +115,7 @@
   </div>
 </section>
 
-<!-- ══════════ 5. JARDÍN INTERACTIVO ══════════ -->
+<!-- ══════════ 6. JARDÍN INTERACTIVO ══════════ -->
 <section id="jardin" class="seccion jardin">
   <div class="contenedor">
     <h2 class="titulo-seccion" data-rev></h2>
@@ -86,7 +125,7 @@
   <button id="limpiar-jardin" class="btn-fantasma" type="button">volver a empezar</button>
 </section>
 
-<!-- ══════════ 6. FINAL ══════════ -->
+<!-- ══════════ 7. FINAL ══════════ -->
 <section id="final" class="seccion final">
   <div class="contenedor">
     <div class="corazon" id="corazon" aria-hidden="true"></div>
@@ -102,5 +141,6 @@
 <script src="petalos.js"></script>
 <script src="jardin.js"></script>
 <script src="app.js"></script>
+<script src="cumpleanos.js"></script>
 </body>
 </html>

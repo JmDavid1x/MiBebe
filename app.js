@@ -33,6 +33,18 @@
       $('#carta .firma').textContent = C.firma || '';
     }
 
+    if (C.cumpleanos) {
+      const cb = C.cumpleanos;
+      $('#cumpleanos .cd-etiqueta').textContent = cb.etiqueta;
+      $('#cumpleanos .titulo-seccion').textContent = cb.titulo;
+      $('#cumpleanos .cd-mensaje').textContent = cb.mensaje;
+      $('#cumpleanos .cd-fecha').textContent = `31 de agosto`;
+      const tit = document.getElementById('cumple-titulo');
+      const txt = document.getElementById('cumple-texto');
+      if (tit) tit.textContent = cb.mensajeCumple;
+      if (txt) txt.textContent = cb.textoCumple;
+    }
+
     if (C.cancion) {
       $('#cancion .titulo-seccion').textContent = C.cancion.titulo;
       $('#cancion .cancion-descripcion').textContent = C.cancion.descripcion;

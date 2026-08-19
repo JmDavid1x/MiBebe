@@ -273,7 +273,136 @@ body::before {
   transition-delay: .3s;
 }
 
-/* ══════════ 3. NUESTRA CANCIÓN ══════════ */
+/* ══════════ 3. CUENTA REGRESIVA ══════════ */
+.cumpleanos {
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 50%, rgba(107,2,16,.15), transparent 70%),
+    linear-gradient(180deg, transparent, rgba(20,4,8,.3) 50%, transparent);
+}
+
+.cd-etiqueta {
+  font-family: var(--sans);
+  font-size: .6rem;
+  letter-spacing: .44em;
+  text-transform: uppercase;
+  color: var(--rojo-vivo);
+  margin-bottom: .8rem;
+  transition-delay: .05s;
+}
+
+.cd-mensaje {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.05rem, 2.6vw, 1.35rem);
+  color: rgba(246,237,233,.78);
+  max-width: 34rem;
+  margin: 1.4rem auto 3.5rem;
+  line-height: 1.75;
+  transition-delay: .15s;
+}
+
+.cd-wrap { transition-delay: .25s; }
+
+.cd-unidades {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: .2rem;
+  flex-wrap: wrap;
+}
+
+.cd-unidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .55rem;
+  min-width: 80px;
+}
+
+.cd-numero {
+  font-family: var(--serif);
+  font-weight: 300;
+  font-size: clamp(3.8rem, 14vw, 7rem);
+  line-height: 1;
+  color: var(--crema);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -.02em;
+  text-shadow:
+    0 0 35px rgba(255,45,77,.55),
+    0 0 80px rgba(208,2,27,.25),
+    0 2px 40px rgba(0,0,0,.8);
+  transition: text-shadow .3s;
+}
+
+.cd-numero.pulso {
+  text-shadow:
+    0 0 50px rgba(255,45,77,.85),
+    0 0 100px rgba(208,2,27,.45),
+    0 2px 40px rgba(0,0,0,.8);
+}
+
+.cd-label {
+  font-family: var(--sans);
+  font-size: .54rem;
+  letter-spacing: .38em;
+  text-transform: uppercase;
+  color: var(--gris);
+}
+
+.cd-sep {
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 10vw, 5rem);
+  color: rgba(255,45,77,.35);
+  line-height: 1;
+  padding-top: .1em;
+  user-select: none;
+}
+
+.cd-fecha {
+  font-family: var(--script);
+  font-size: clamp(1.7rem, 5vw, 2.5rem);
+  color: var(--rojo-vivo);
+  margin-top: 2.6rem;
+  text-shadow: 0 0 28px rgba(255,45,77,.5);
+  transition-delay: .35s;
+}
+
+/* Estado de cumpleaños */
+.cumple-activo {
+  text-align: center;
+  animation: aparecer 1.2s cubic-bezier(.22,.61,.36,1) forwards;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.cumple-titulo {
+  font-family: var(--script);
+  font-size: clamp(2.8rem, 10vw, 5.5rem);
+  color: var(--crema);
+  text-shadow: 0 0 50px rgba(255,45,77,.55);
+  line-height: 1.1;
+  margin-bottom: 1.6rem;
+}
+
+.cumple-texto {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(1.05rem, 2.8vw, 1.35rem);
+  color: var(--rosa-palido);
+  max-width: 34rem;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+@media (max-width: 640px) {
+  .cd-unidad  { min-width: 60px; }
+  .cd-sep     { font-size: 2rem; }
+}
+
+/* ══════════ 4. NUESTRA CANCIÓN ══════════ */
 .cancion { background: linear-gradient(180deg, transparent, rgba(107,2,16,.07) 50%, transparent); }
 
 .cancion-descripcion {
